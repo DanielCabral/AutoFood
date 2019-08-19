@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cadastrar</title>
+    <meta name="description" content="curso de bootstrap 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .weekDays-selector input {
+          display: none!important;
+        }
+
+        .weekDays-selector input[type=checkbox] + label {
+          display: inline-block;
+          border-radius: 6px;
+          background: #dddddd;
+          height: 25px;
+          width: 25px;
+          margin-right: 3px;
+          margin-left: 12px;
+          line-height: 25px;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .weekDays-selector input[type=checkbox]:checked + label {
+          background: #2AD705;
+          color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+      <div class="card card-signin my-5">
+          <div class="card-body">
+    <form action="cadastrarHorario.php" method="post">
+        <img class="mb-4" src="" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal card-title text-center">Novo Horario</h1>
+        <label for="inputNome" class="sr-only">Horario</label>
+        <input type="time" name="horario" id="inputHorario" class="form-control" placeholder="Horario" required="" autofocus>
+        <br>
+        <h4>Dias da Semana</h4>
+        <div class="weekDays-selector">
+          <input type="checkbox" id="weekday-mon" class="weekday" />
+          <label for="weekday-mon">M</label>
+          <input type="checkbox" id="weekday-tue" class="weekday" />
+          <label for="weekday-tue">T</label>
+          <input type="checkbox" id="weekday-wed" class="weekday" />
+          <label for="weekday-wed">W</label>
+          <input type="checkbox" id="weekday-thu" class="weekday" />
+          <label for="weekday-thu">T</label>
+          <input type="checkbox" id="weekday-fri" class="weekday" />
+          <label for="weekday-fri">F</label>
+          <input type="checkbox" id="weekday-sat" class="weekday" />
+          <label for="weekday-sat">S</label>
+          <input type="checkbox" id="weekday-sun" class="weekday" />
+          <label for="weekday-sun">S</label>
+        </div>
+        <br>
+        <button class="btn btn-primary btn-block" type="submit">Salvar</button>
+        <p class="mt-5 mb-3 text-muted">© 2019-2019</p>
+      </form>
+
+      </div>
+    </div>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+  </div>
+</div>
+    
+  </div>
+<script src="jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
